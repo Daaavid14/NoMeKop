@@ -393,11 +393,17 @@ footer {
     min-height: 18px;
 }
 
-
-
 /* ///////////////////////// */
 /*      WALLET DROPDOWN      */
 /* ///////////////////////// */
+
+.wallet-menu {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.wallet-menu[aria-hidden="false"] {
+  opacity: 1;
+}
 
 .wallet-menu {
   position: absolute; /* make sure parent/header is position:relative */
